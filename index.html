@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS only -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="./css/all.css" />
+
+    <!---------------- Animate on scroll library  ----------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="a" type="image/x-icon" />
+    <title>SIMBI SHOP</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!----------------------- header navbar start--------------------------->
+      <header class="header fixed-top trans_300">
+        <!----------------------- top navbar start--------------------------->
+        <div class="topnav d-none d-md-none d-lg-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="topnav__left">
+                  Free shipping on all Abuja orders over 40N
+                </div>
+              </div>
+              <div class="col-lg-6 text-right">
+                <div class="topnav__right">
+                  <ul class="topnav__menu">
+                    <li class="position-relative selection">
+                      <a href="#"
+                        >USD
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="selection__dropdown">
+                        <li><a href="#">GBP</a></li>
+                        <li><a href="#">EUR</a></li>
+                        <li><a href="#">AUR</a></li>
+                        <li><a href="#">CAD</a></li>
+                      </ul>
+                    </li>
+                    <li class="position-relative selection">
+                      <a href="#"
+                        >English
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="selection__dropdown">
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">Italian</a></li>
+                        <li><a href="#">German</a></li>
+                        <li><a href="#">Spanish</a></li>
+                      </ul>
+                    </li>
+                    <li class="position-relative selection">
+                      <a href=""
+                        >My Account
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="selection__dropdown">
+                        <li>
+                          <a href="./pages/login.html">
+                            <i class="fas fa-arrow-alt-circle-right pe-2"></i>
+                            Login</a
+                          >
+                        </li>
+                        <li>
+                          <a href="./pages/register.html">
+                            <i
+                              class="fa fa-user-plus pe-2"
+                              aria-hidden="true"
+                            ></i>
+                            Register</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!----------------------- top navbar end--------------------------->
+        <!----------------------- main navbar start--------------------------->
+        <div class="main_nav">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-right">
+                <div
+                  class="logo__container text-dark d-sm-flex justify-content-sm-center align-items-sm-center"
+                >
+                  <a href="#">SIMBI<span class="text__pink">SHOP</span></a>
+                </div>
+
+                <nav class="navbar">
+                  <ul class="nav-menu d-none d-md-none d-lg-block">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#deals">Promotion</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blogs">Blog</a></li>
+                    <li><a href="#newsletter">Contact</a></li>
+                  </ul>
+                  <ul class="nav-user">
+                    <li>
+                      <a href="#">
+                        <i
+                          class="fa fa-search"
+                          aria-hidden="true"
+                          data-bs-toggle="modal"
+                          data-bs-target="#searchModal"
+                        ></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-user" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="position-relative check-out"
+                        ><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <span class="check-out-item">2</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="bar-container d-lg-none d-block">
+                    <i
+                      class="fa fa-bars"
+                      aria-hidden="true"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#sidebar"
+                    >
+                    </i>
+                  </div>
+                </nav>
+              </div>
+
+              <!-- d-flex d-md-none d-none d-lg-flex -->
+            </div>
+          </div>
+        </div>
+        <!----------------------- main navbar end--------------------------->
+      </header>
+      <!----------------------- header navbar end--------------------------->
+      <!----------------------- banner section start--------------------------->
+      <section class="banner">
+        <!--------------------- Image banner start ------------------------ -->
+        <div
+          class="banner__img position-relative"
+          style="background-image: url('/assets/images/banner-img.webp')"
+        >
+          <div class="container fill-height">
+            <div class="row align-items-center fill-height">
+              <div class="col">
+                <div class="banner-content" data-aos="fade-right">
+                  <h5>spring / summer collection 2022</h5>
+                  <h1>get up to 30% off new arrivals</h1>
+                  <button class="banner-btn">shop now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------------- Image banner end ------------------------ -->
+        <!--------------------- bottom banner start ------------------------ -->
+        <div class="bottom__banner">
+          <div class="container text-light">
+            <div class="row">
+              <div class="col-md-4">
+                <div
+                  data-aos="fade-up"
+                  class="banner-item align-items-center"
+                  style="
+                    background-image: url(assets/images/xbanner_1.jpg.pagespeed.ic.QkTXTeiJ_p.webp);
+                  "
+                >
+                  <div class="banner-category">
+                    <a href="#">Women's</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  data-aos="fade-down"
+                  class="banner-item align-items-center"
+                  style="
+                    background-image: url(assets/images/xbanner_2.jpg.pagespeed.ic.GDnlYIF7_c.webp);
+                  "
+                >
+                  <div class="banner-category">
+                    <a href="#">Accessories</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  data-aos="fade-up"
+                  class="banner-item align-items-center"
+                  style="
+                    background-image: url(assets/images/xbanner_3.jpg.pagespeed.ic.eYEUwVIlpo.webp);
+                  "
+                >
+                  <div class="banner-category">
+                    <a href="#">Men</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------------- bottom banner end ------------------------ -->
+      </section>
+      <!----------------------- banner section end--------------------------->
+      <!-------------------- New Arrivals section start ------------------------>
+      <section class="new-arrivals" id="shop">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col text-center">
+              <div class="section-title">
+                <h2>New Arrivals</h2>
+                <div
+                  class="border-under-pink"
+                  style="margin: 18px auto 0px"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col text-center">
+              <div class="new-arrivals-sorting">
+                <ul class="arrivals-grid-sorting button-group clearfix">
+                  <li
+                    class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active"
+                    data-filter="all"
+                  >
+                    all
+                  </li>
+                  <li
+                    class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center"
+                    data-filter="women"
+                  >
+                    women
+                  </li>
+                  <li
+                    class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center"
+                    data-filter="accessories"
+                  >
+                    accessories
+                  </li>
+                  <li
+                    class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center"
+                    data-filter="men"
+                  >
+                    men
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="slide-right">
+              <div
+                class="card-container d-flex justify-content-center align-content-center text-center"
+                data-item="men"
+              >
+                <div class="card border-0" style="width: 16rem">
+                  <img
+                    src="assets/images/xproduct_1.png.pagespeed.ic.DvPBG5vxas.webp"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fujifilm X100T 16 MP Digital Camera (Silver)
+                    </h5>
+                    <p class="card-text">$520.00 <span>$590.00</span></p>
+                    <a href="#" class="red_button add_to_cart_button"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="slide-right">
+              <div
+                class="card-container d-flex justify-content-center align-content-center text-center"
+              >
+                <div class="card border-0" style="width: 16rem">
+                  <img
+                    src="assets/images/xproduct_3.png.pagespeed.ic.jCfub0gA7s.webp"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fujifilm X100T 16 MP Digital Camera (Silver)
+                    </h5>
+                    <p class="card-text">$520.00 <span>$590.00</span></p>
+                    <a href="#" class="red_button add_to_cart_button"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="slide-right">
+              <div
+                class="card-container d-flex justify-content-center align-content-center text-center"
+              >
+                <div class="card border-0" style="width: 16rem">
+                  <img
+                    src="assets/images/xproduct_2.png.pagespeed.ic.5v5cwO3kBP.webp"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fujifilm X100T 16 MP Digital Camera (Silver)
+                    </h5>
+                    <p class="card-text">$520.00 <span>$590.00</span></p>
+                    <a href="#" class="red_button add_to_cart_button"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="slide-right">
+              <div
+                class="card-container d-flex justify-content-center align-content-center text-center"
+              >
+                <div class="card border-0" style="width: 16rem">
+                  <img
+                    src="assets/images/xproduct_8.png.pagespeed.ic.zX5uOkWPYV.webp"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fujifilm X100T 16 MP Digital Camera (Silver)
+                    </h5>
+                    <p class="card-text">$520.00 <span>$590.00</span></p>
+                    <a href="#" class="red_button add_to_cart_button"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="slide-left">
+              <div
+                class="card-container d-flex justify-content-center align-content-center text-center"
+              >
+                <div class="card border-0" style="width: 16rem">
+                  <img
+                    src="assets/images/xproduct_4.png.pagespeed.ic.WBUe9pni_n.webp"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fujifilm X100T 16 MP Digital Camera (Silver)
+                    </h5>
+                    <p class="card-text">$520.00 <span>$590.00</span></p>
+                    <a href="#" class="red_button add_to_cart_button"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="slide-right">
+              <div
+                class="card-container d-flex justify-content-center align-content-center text-center"
+              >
+                <div class="card border-0" style="width: 16rem">
+                  <img
+                    src="assets/images/xproduct_5.png.pagespeed.ic.qi-sJ2HPdI.webp"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fujifilm X100T 16 MP Digital Camera (Silver)
+                    </h5>
+                    <p class="card-text">$520.00 <span>$590.00</span></p>
+                    <a href="#" class="red_button add_to_cart_button"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="slide-left">
+              <div
+                class="card-container d-flex justify-content-center align-content-center text-center"
+              >
+                <div class="card border-0" style="width: 16rem">
+                  <img
+                    src="assets/images/xproduct_6.png.pagespeed.ic.zZ9BU77Jfy.webp"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fujifilm X100T 16 MP Digital Camera (Silver)
+                    </h5>
+                    <p class="card-text">$520.00 <span>$590.00</span></p>
+                    <a href="#" class="red_button add_to_cart_button"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="slide-left">
+              <div
+                class="card-container d-flex justify-content-center align-content-center text-center"
+              >
+                <div class="card border-0" style="width: 16rem">
+                  <img
+                    src="assets/images/xproduct_7.png.pagespeed.ic.9nA45gs3KX.webp"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fujifilm X100T 16 MP Digital Camera (Silver)
+                    </h5>
+                    <p class="card-text">$520.00 <span>$590.00</span></p>
+                    <a href="#" class="red_button add_to_cart_button"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="slide-left">
+              <div
+                class="card-container d-flex justify-content-center align-content-center text-center"
+              >
+                <div class="card border-0" style="width: 16rem">
+                  <img
+                    src="assets/images/xproduct_9.png.pagespeed.ic.I5FJ0ewNHX.webp"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fujifilm X100T 16 MP Digital Camera (Silver)
+                    </h5>
+                    <p class="card-text">$520.00 <span>$590.00</span></p>
+                    <a href="#" class="red_button add_to_cart_button"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="slide-left">
+              <div
+                class="card-container d-flex justify-content-center align-content-center text-center"
+              >
+                <div class="card border-0" style="width: 16rem">
+                  <img
+                    src="assets/images/xproduct_10.png.pagespeed.ic.69mYA3FDZH.webp"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fujifilm X100T 16 MP Digital Camera (Silver)
+                    </h5>
+                    <p class="card-text">$520.00 <span>$590.00</span></p>
+                    <a href="#" class="red_button add_to_cart_button"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------- New Arrivals section end ------------------------>
+      <!-------------------- dealsoftheweek section end ------------------------>
+      <section class="deals_of_the_week" id="deals">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="deals_of_the_week_img" data-aos="slide-right">
+                <img
+                  src="assets/images/xdeal_ofthe_week.png.pagespeed.ic.XO-8sFC10E.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 text-right deals_of_the_week_col">
+              <div
+                class="deals_of_the_week_content d-flex flex-column align-items-center"
+                data-aos="slide-left"
+              >
+                <div class="deals_title">
+                  <h2>Deals of the week</h2>
+                  <div class="border-under-pink mt-3"></div>
+                </div>
+                <ul class="deals-timer d-flex text-center">
+                  <li
+                    class="d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div class="timer_num">89</div>
+                    <div class="timer_unit">day</div>
+                  </li>
+                  <li
+                    class="d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div class="timer_num">89</div>
+                    <div class="timer_unit">hours</div>
+                  </li>
+                  <li
+                    class="d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div class="timer_num">09</div>
+                    <div class="timer_unit">mins</div>
+                  </li>
+                  <li
+                    class="d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <div class="timer_num">89</div>
+                    <div class="timer_unit">sec</div>
+                  </li>
+                </ul>
+                <div class="red_button deals_of_the_week_button">
+                  <a href="#">Shop now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------- dealsoftheweek section end ------------------------>
+      <!-------------------- benefit section end ------------------------>
+      <section class="benefit">
+        <div class="container">
+          <div class="row benefit_row g-0">
+            <div class="col-lg-3 benerfit_col">
+              <div class="benefit_item d-flex flex-row align-items-center">
+                <div class="benefit_icon">
+                  <i class="fa fa-truck" aria-hidden="true"></i>
+                </div>
+                <div class="benefit_content">
+                  <h6>FREE SHIPPING</h6>
+                  <p>Suffered Alteration in Some Form</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 benerfit_col">
+              <div class="benefit_item d-flex flex-row align-items-center">
+                <div class="benefit_icon">
+                  <i class="fas fa-money-bill" aria-hidden="false"></i>
+                </div>
+                <div class="benefit_content">
+                  <h6>CACH ON DELIVERY</h6>
+                  <p>The Internet Tend To Repeat</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 benerfit_col">
+              <div class="benefit_item d-flex flex-row align-items-center">
+                <div class="benefit_icon">
+                  <i class="fa fa-undo" aria-hidden="true"></i>
+                </div>
+                <div class="benefit_content">
+                  <h6>45 DAYS RETURN</h6>
+                  <p>Making it Look Like Readable</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 benerfit_col">
+              <div class="benefit_item d-flex flex-row align-items-center">
+                <div class="benefit_icon">
+                  <i class="fas fa-clock" aria-hidden="true"></i>
+                </div>
+                <div class="benefit_content">
+                  <h6>OPENING ALL WEEK</h6>
+                  <p>8AM - 09PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------- benefit section end ------------------------>
+      <!-------------------- latest blogs start ------------------------>
+      <section class="latest_blogs" id="blogs">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="section-title text-center">
+                <h2>LATEST BLOGS</h2>
+              </div>
+              <div
+                class="border-under-pink"
+                style="margin: 18px auto 0px"
+              ></div>
+            </div>
+          </div>
+          <div class="row blog_container">
+            <div class="col-lg-4">
+              <div class="blog_item">
+                <div
+                  class="blog_background"
+                  style="
+                    background-image: url(/assets/images/xblog_1.jpg.pagespeed.ic.uhsS2HcMth.webp);
+                  "
+                ></div>
+                <div
+                  class="blog_content d-flex flex-column justify-content-center align-items-center text-center"
+                >
+                  <h4 class="blog_title">
+                    Here are the trends I see coming this fall
+                  </h4>
+                  <span class="blog_postedBy">by admin | dec 01, 2017</span>
+                  <a href="#" class="blog_more">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="blog_item">
+                <div
+                  class="blog_background"
+                  style="
+                    background-image: url(assets/images/xblog_2.jpg.pagespeed.ic.qxmbUraFLI.webp);
+                  "
+                ></div>
+                <div
+                  class="blog_content d-flex flex-column justify-content-center align-items-center text-center"
+                  data-aos="flip=left"
+                >
+                  <h4 class="blog_title">
+                    Here are the trends I see coming this fall
+                  </h4>
+                  <span class="blog_postedBy">by admin | dec 01, 2017</span>
+                  <a href="#" class="blog_more">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="blog_item">
+                <div
+                  class="blog_background"
+                  style="
+                    background-image: url(assets/images/xblog_3.jpg.pagespeed.ic.hVgfREpCpV.webp);
+                  "
+                ></div>
+                <div
+                  class="blog_content d-flex flex-column justify-content-center align-items-center text-center"
+                >
+                  <h4 class="blog_title">
+                    Here are the trends I see coming this fall
+                  </h4>
+                  <span class="blog_postedBy">by admin | dec 01, 2017</span>
+                  <a href="#" class="blog_more">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------- latest blogs end ------------------------>
+      <!-------------------- newsletter start ------------------------>
+      <section class="newsletter" id="newsletter">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div
+                class="newsletter_text d-flex flex-column align-items-lg-start justify-content-center align-items-lg-start align-items-md-center text-center"
+              >
+                <h6>Newsletter</h6>
+                <p>
+                  Subscribe to our newsletter and get 20% off your first
+                  purchase
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <form action="">
+                <div
+                  class="newsletter_form d-flex flex-md-row flex-column align-items-center justify-content-lg-end justify-content-center"
+                >
+                  <input type="email" placeholder="Your Email" />
+                  <button id="newsletter_btn">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------- newsletter end ------------------------>
+
+      <!-------------------- footer end ------------------------>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                class="footer-nav-container d-flex flex-sm-row flex-column justify-content-lg-start justify-content-center align-items-center text-center"
+              >
+                <ul class="footer-nav">
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">faqs</a></li>
+                  <li><a href="#">contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="footer-social d-flex flex-row justify-content-lg-end justify-content-center align-items-center"
+              >
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-skype" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-pinterest" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div
+                class="footer-nav-container d-flex flex-sm-row flex-column justify-content-lg-start justify-content-center align-items-center text-center"
+              >
+                <div class="copyright">design by oladele bidemi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-------------------- footer end ------------------------>
+
+      <!----------------------- search modal start--------------------------->
+      <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">
+                <span class="text-muted mod-title-link text-uppercase"
+                  >Search</span
+                >
+                <a href="#" class="text-dark mod-title-link"
+                  >SIMBI<span class="text__pink">SHOP</span></a
+                >
+              </h4>
+              <button
+                class="btn-close"
+                type="button"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <label for="search" class="form-label">Search</label>
+              <input type="text" class="form-control" id="search" />
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-info" type="submit">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------- search modal end--------------------------->
+      <!----------------------- offcanvas sidenav start ------------------------->
+      <div class="offcanvas offcanvas-end" id="sidebar">
+        <div class="offcanvas-header mt-4">
+          <h5 class="offcanvas-title">
+            <a href="index.html" class="text-dark fw-bolder"
+              >SIMBI<span class="text__pink">SHOP</span></a
+            >
+          </h5>
+          <button
+            class="btn-close text-dark fw-bolder me-2"
+            id="off-btn"
+            type="button"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <!----------------------- mobile navigation start ----------------------->
+        <div class="offcanvas-body d-flex flex-row">
+          <div class="sidebar-menu">
+            <ul>
+              <li class="drop">
+                <a href="#"
+                  >USD
+                  <i class="fa fa-chevron-down p-2" aria-hidden="true"></i>
+                </a>
+                <ul class="mobile__dropdown">
+                  <li><a href="#">GBP</a></li>
+                  <li><a href="#">EUR</a></li>
+                  <li><a href="#">AUR</a></li>
+                  <li><a href="#">CAD</a></li>
+                </ul>
+              </li>
+              <li class="drop">
+                <a href="#"
+                  >english
+                  <i class="fa fa-chevron-down p-2" aria-hidden="true"></i>
+                </a>
+                <ul class="mobile__dropdown">
+                  <li><a href="#">French</a></li>
+                  <li><a href="#">Italian</a></li>
+                  <li><a href="#">German</a></li>
+                  <li><a href="#">Arabic</a></li>
+                </ul>
+              </li>
+              <li class="drop">
+                <a href="#"
+                  >my account
+                  <i class="fa fa-chevron-down p-2" aria-hidden="true"></i>
+                </a>
+                <ul class="mobile__dropdown sign">
+                  <li><a href="./pages/login.html">Sign in</a></li>
+                  <li><a href="./pages/register.html">Register</a></li>
+                </ul>
+              </li>
+              <li><a href="#">home</a></li>
+              <li><a href="#">shop</a></li>
+              <li><a href="#">Promotion</a></li>
+              <li><a href="#">pages</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!----------------------- mobile navigation end ----------------------->
+      </div>
+      <!----------------------- offcanvas sidenav end--------------------------->
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Main js file -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>
+
+<!-- <div
+                  class="product-item"
+                  style="position: absolute; left: 0; top: 0"
+                >
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="/assets/images/xproduct_1.png.pagespeed.ic.DvPBG5vxas.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="favorite favorite-left">
+                      <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div
+                      class="product-bubble product-bubble-right product-bubble-red d-flex flex-column align-items-center"
+                    >
+                      <span>-20$</span>
+                    </div>
+                    <div class="product-info">
+                      <h6 class="product-name">
+                        <a href="#"
+                          >Fujifilm X100T 16 MP Digital Camera (Silver)</a
+                        >
+                      </h6>
+                      <div class="product-price">
+                        $520.00
+                        <span>$590.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="red_button add_to_cart_button">
+                    <a href="#">add to cart</a>
+                  </div>
+                </div> -->
